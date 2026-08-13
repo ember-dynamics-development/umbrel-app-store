@@ -1,0 +1,51 @@
+manifestVersion: 1
+
+id: embers-dolibarr
+name: Dolibarr
+tagline: Open-source ERP and CRM for businesses
+
+icon: https://www.dolibarr.org/images/dolibarr_logo.svg
+
+category: Business
+version: "1.0.0"
+
+port: 80
+
+description: >-
+  Dolibarr is a powerful open-source ERP and CRM platform for businesses,
+  organizations and freelancers.
+
+  Manage customers, suppliers, products, services, proposals, orders,
+  invoices, payments, accounting, stock, projects and more from one
+  modular and easy-to-use platform.
+
+  This Umbrel app includes Dolibarr 21 with a dedicated MariaDB database
+  and persistent storage for all important application data.
+
+developer: Ember Development Systems
+website: https://www.dolibarr.org
+
+submitter: Ember Dynamics Development Systems
+submission: https://github.com/ember-dynamics-development/umbrel-app-store
+
+repo: https://github.com/ember-dynamics-development/umbrel-app-store
+
+support: https://github.com/ember-dynamics-development/umbrel-app-store/issues
+
+gallery:
+  - https://www.dolibarr.org/images/dolibarr_screen.png
+  - https://www.dolibarr.org/images/dolibarr_screen2.png
+  - https://www.dolibarr.org/images/dolibarr_screen3.png
+
+releaseNotes: >-
+  Initial release of Dolibarr for the Ember Development Systems Umbrel App Store.
+
+  Includes Dolibarr ERP and CRM with MariaDB, persistent database storage,
+  document storage and support for custom Dolibarr modules.
+
+dependencies: []
+
+path: ""
+
+defaultUsername: "admin"
+defaultPassword: ""

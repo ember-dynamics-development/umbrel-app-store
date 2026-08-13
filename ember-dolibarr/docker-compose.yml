@@ -16,11 +16,11 @@ services:
       DOLI_DB_HOST: db
       DOLI_DB_NAME: dolibarr
       DOLI_DB_USER: dolibarr
-      DOLI_DB_PASSWORD: ${DOLI_DB_PASSWORD}
+      DOLI_DB_PASSWORD: "dolibarr-db-password"
       DOLI_DB_TYPE: mysqli
 
       DOLI_ADMIN_LOGIN: admin
-      DOLI_ADMIN_PASSWORD: ${DOLI_ADMIN_PASSWORD}
+      DOLI_ADMIN_PASSWORD: "admin-password-change-me"
 
       DOLI_URL_ROOT: http://localhost
       PHP_INI_DATE_TIMEZONE: Europe/Berlin
@@ -36,10 +36,10 @@ services:
     image: mariadb:11
     restart: unless-stopped
     environment:
-      MYSQL_DATABASE: dolibarr
-      MYSQL_USER: dolibarr
-      MYSQL_PASSWORD: ${DOLI_DB_PASSWORD}
-      MYSQL_ROOT_PASSWORD: ${DOLI_DB_ROOT_PASSWORD}
+      MARIADB_DATABASE: dolibarr
+      MARIADB_USER: dolibarr
+      MARIADB_PASSWORD: "dolibarr-db-password"
+      MARIADB_ROOT_PASSWORD: "dolibarr-root-password"
 
     volumes:
       - ${APP_DATA_DIR}/db:/var/lib/mysql

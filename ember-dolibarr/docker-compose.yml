@@ -1,5 +1,3 @@
-version: "3.7"
-
 services:
 
   app_proxy:
@@ -10,6 +8,7 @@ services:
   server:
     image: dolibarr/dolibarr:21
     restart: unless-stopped
+
     environment:
       DOLI_INSTALL_AUTO: "1"
 
@@ -22,8 +21,8 @@ services:
       DOLI_ADMIN_LOGIN: admin
       DOLI_ADMIN_PASSWORD: "admin-password-change-me"
 
-      DOLI_URL_ROOT: http://localhost
-      PHP_INI_DATE_TIMEZONE: Europe/Berlin
+      DOLI_URL_ROOT: "http://localhost"
+      PHP_INI_DATE_TIMEZONE: "Europe/Berlin"
 
     volumes:
       - ${APP_DATA_DIR}/documents:/var/www/documents
@@ -35,6 +34,7 @@ services:
   db:
     image: mariadb:11
     restart: unless-stopped
+
     environment:
       MARIADB_DATABASE: dolibarr
       MARIADB_USER: dolibarr
